@@ -23,7 +23,7 @@ def func_iter_3(df, name):
 
         silhouette_scores.append(silhouette_avg)
         
-        # Рассчитайте инерцию для каждого кластера
+        # Рассчитаем инерцию для каждого кластера
         inertia = 0
         for i in range(1, num_clusters + 1):
             cluster_points = df[cluster_labels == i]

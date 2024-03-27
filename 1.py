@@ -22,7 +22,7 @@ df_1 = df_1.dropna()
 numerical_columns_1 = df_1.drop('num', axis = 1).select_dtypes(include=[np.number]).columns
 
 #считываем второй датасет
-# Укажите путь к папке с файлами .dat
+# Укажем путь к папке с файлами .dat
 folder_path = r'/Users/dmitriy/Desktop/МИРЭА/магистратура/ИСИТ/Практики/11-12/11-12/11-12/gas_sensor'
 
 file_list = os.listdir(folder_path)
